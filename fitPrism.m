@@ -74,9 +74,6 @@ faceMap = [1 2 4 3;
 % seeds = flip(seeds,2); % data tooltips lists points from last to first, flip order
 %USERINPUT
 
-% Hard code for convenience/tuning
-% seeds = [-0.855954766273499,-0.759344577789307,-0.946547567844391,-0.978640794754028,-1.16053771972656;1.23495078086853,1.22039794921875,1.02619171142578,1.14025306701660,1.24404954910278;2.73184156417847,2.96773767471313,2.84801459312439,3.10743141174316,2.93859481811523];
-
 faceIndices = [1 3 5 2 4]; % Indices of which face each seed point corresponds to
 % +x +y +z -x -y
 
@@ -89,7 +86,7 @@ planeRadius = .125*ones(size(seeds,2),1);
 seedRadius(1) = .050;
 planeRadius(1) = .050;
 
-
+% Colors in ROYGBIV order
 colors = [1 0 0; % Red
     1 .5 0; % Orange
     1 1 0; % Yellow
@@ -240,7 +237,8 @@ end
 
 %% Transform coordinates to desired position based off of known geometry
 
-spacerHeight = .4495; %in
+% spacerHeight = .4495; %in
+spacerHeight = .530; %in
 
 T = eye(4);
 T(1:3,4) = -[X/2+spacerHeight+propHubThickness/2,0,0]';

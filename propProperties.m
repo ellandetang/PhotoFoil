@@ -6,7 +6,7 @@ propName = 'Tmotor_12x4';
 propDiameter = 12; % inches
 trueRadius = 6; % inches 
 pitch = 4; % inches
-bladeDirection = -1; % 1 CW,-1 CCW Used for computing twist correctly later
+bladeDirection = 1; % 1 CW,-1 CCW Used for computing twist correctly later
 propHubThickness = .275; % in
 
 % Coordinate System Alignment Seeds

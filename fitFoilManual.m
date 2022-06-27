@@ -94,6 +94,8 @@ end
 
 %% Calculate secondary parameters
 
+disp('Performing Airfoil Fits')
+
 rotZ =@(th) [cos(th) -sin(th);
     sin(th) cos(th)];
 

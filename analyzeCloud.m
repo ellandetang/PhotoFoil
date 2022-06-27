@@ -60,10 +60,11 @@ color3 = colors(selectionIndices,:)/255;
 figure(3) % Color Frequency histogram
 clf
 
-colorSample = [97 98 95;
-    228 75 61;
-    96 146 95]/255; % Select colors corresponding to points to be eliminated
-colorThreshold = [0.05 0.1 .05 0]; % Threshold of similarity for elimination
+% colorSample = []/255;
+colorSample = [
+236 95 46;
+95 177 113]/255; % Select colors corresponding to points to be eliminated
+colorThreshold = [0.04 0.03]; % Threshold of similarity for elimination
 %USERINPUT
 
 colorInd = true(size(color3,1),1);

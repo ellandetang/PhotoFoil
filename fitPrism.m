@@ -5,7 +5,6 @@ clear
 close all
 clc
 
-
 nfig = 0;
 
 %% Load Point Cloud
